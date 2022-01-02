@@ -1,0 +1,24 @@
+1| db.collection.insertOne(myData,(err)=>{})
+
+2| db.collection.delete[One]Many(delItem,(err,resObj)=>{})
+
+3|findOne={name:"sabbir"}//with out condition it find first one
+  db.collection.find(fiOne,(err,rsult)=>{})
+
+4|.find().toArray((err,result)=>{})//find all
+
+5|query= {name:'karim'}
+  .find(query)[.limit(3)].toArray((err,result)=>{})
+
+6|sortPattern = {roll:1}//-1 for desnding
+  .find().sort(sortPattern).toArray((err,result)=>{})
+
+7| myQuery = {id:'2'}
+   newVal = {$set: {name:'md sabbir hossain',...}}
+   collection.updateOne(myQuery,newVal,(err,res)=>{})//res is a json file
+
+8| //create collection
+    db.createCollection('teachers',(err,res)=>{console.log(res)})
+
+9| //drop collection
+    db.dropCollection('teachers',(err,res)=>{console.log(res)})
