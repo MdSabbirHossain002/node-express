@@ -1,8 +1,15 @@
 let express = require("express")
 let app = express()
-let userRouter = require('./routers/users.router')
-let mongooseRouter = require('./routers/mongoose.router')
-app.use("/", mongooseRouter)
+let usersRouter = require('./routers/users.route')
+let mongodbRouter = require('./routers/mongodb.route')
+let multerRouter = require('./routers/multer.route')
+
+app.set('view engine', 'ejs');
+app.use("/", multerRouter);
+app.use("/", usersRouter);
+app.use("/", mongodbRouter);
+
+
 
 
 module.exports = app;
