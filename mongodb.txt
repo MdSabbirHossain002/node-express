@@ -1,3 +1,4 @@
+it is again 16 ferruary 2022.
 1| db.collection.insertOne(myData,(err)=>{})
 
 2| db.collection.delete[One]Many(delItem,(err,resObj)=>{})
