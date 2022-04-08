@@ -4,7 +4,9 @@ let port = process.env.PORT || 3000
 let app = require('./app')
 
 
-app.use('/',(req.res)=>{  res.send('there was an errorrrr')};
+app.use('/',(req.res)=>{ 
+    res.send('there was an errorrrr')
+});
 //         
 
 
